@@ -1,5 +1,6 @@
 # django_ogp
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a1363cd34274377942b34418ed2b00a)](https://app.codacy.com/app/ricardochaves/django_ogp?utm_source=github.com&utm_medium=referral&utm_content=ricardochaves/django_ogp&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/ricardochaves/django_ogp.svg?branch=master)](https://travis-ci.org/ricardochaves/django_ogp) [![Coverage Status](https://coveralls.io/repos/github/ricardochaves/django_ogp/badge.svg?branch=fix-travis)](https://coveralls.io/github/ricardochaves/django_ogp?branch=fix-travis) [![Maintainability](https://api.codeclimate.com/v1/badges/a2af8f7a30ad3bee2cac/maintainability)](https://codeclimate.com/github/ricardochaves/django_ogp/maintainability) [![Updates](https://pyup.io/repos/github/ricardochaves/django_ogp/shield.svg)](https://pyup.io/repos/github/ricardochaves/django_ogp/) [![Python 3](https://pyup.io/repos/github/ricardochaves/django_ogp/python-3-shield.svg)](https://pyup.io/repos/github/ricardochaves/django_ogp/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 A more dynamic way to register Open Graph protocol
