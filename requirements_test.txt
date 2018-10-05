@@ -4,3 +4,6 @@ coverage==4.5.1
 coveralls==1.5.1
 tox-travis
 pluggy>=0.7
+pytest-django
+pytest-cov
+mock
