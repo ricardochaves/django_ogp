@@ -7,6 +7,7 @@ from django_ogp.models import LocaleAlternateMeta
 from django_ogp.templatetags.ogp import show_ogp
 from unittest import mock
 
+
 # Create your tests here.
 class TestOGP(TestCase):
     def setUp(self):
