@@ -8,4 +8,5 @@ python:
   - "3.7-dev"
 install: 
   - pip install -r requirements_test.txt
+  - pip install django
 script: tox
