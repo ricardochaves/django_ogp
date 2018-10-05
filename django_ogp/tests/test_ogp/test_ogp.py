@@ -1,6 +1,6 @@
-import django
+# import django
 
-django.setup()
+# django.setup()
 
 
 from django_ogp.tests import settings
