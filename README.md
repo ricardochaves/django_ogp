@@ -16,26 +16,26 @@ Now you can create [OGPs](http://ogp.me/) in an easy way.
 
 The test matrix guarantees coverage for:
 
- - pythos2·7 : Django 1.8
- - pythos2·7 : Django 1.11
- - pythos3·4 : Django 1.8
- - pythos3·4 : Django 1.9
- - pythos3·4 : Django 1.11
- - pythos3·5 : Django 1.8
- - pythos3·5 : Django 1.9
- - pythos3·5 : Django 1.11
- - pythos3·5 : Django 2.0
- - pythos3·5 : Django 2.1
- - pythos3·6 : Django 1.8
- - pythos3·6 : Django 1.9
- - pythos3·6 : Django 1.11
- - pythos3·6 : Django 2.0
- - pythos3·6 : Django 2.1
- - pythos3·7 : Django 1.8
- - pythos3·7 : Django 1.9
- - pythos3·7 : Django 1.11
- - pythos3·7 : Django 2.0
- - pythos3·7 : Django 2.1
+- pythos2·7 : Django 1.8
+- pythos2·7 : Django 1.11
+- pythos3·4 : Django 1.8
+- pythos3·4 : Django 1.9
+- pythos3·4 : Django 1.11
+- pythos3·5 : Django 1.8
+- pythos3·5 : Django 1.9
+- pythos3·5 : Django 1.11
+- pythos3·5 : Django 2.0
+- pythos3·5 : Django 2.1
+- pythos3·6 : Django 1.8
+- pythos3·6 : Django 1.9
+- pythos3·6 : Django 1.11
+- pythos3·6 : Django 2.0
+- pythos3·6 : Django 2.1
+- pythos3·7 : Django 1.8
+- pythos3·7 : Django 1.9
+- pythos3·7 : Django 1.11
+- pythos3·7 : Django 2.0
+- pythos3·7 : Django 2.1
 
 ## Install
 
