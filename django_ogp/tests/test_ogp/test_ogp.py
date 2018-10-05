@@ -1,4 +1,4 @@
-from django.conf import settings
+from django_ogp.tests import settings
 from django.test import TestCase
 
 from django_ogp.models import BasicMeta
@@ -6,6 +6,10 @@ from django_ogp.models import ImageMeta
 from django_ogp.models import LocaleAlternateMeta
 from django_ogp.templatetags.ogp import show_ogp
 
+try:
+    from unittest.mock import patch
+except ImportError:
+    from mock import patch
 
 # Create your tests here.
 class TestOGP(TestCase):
@@ -40,8 +44,10 @@ class TestOGP(TestCase):
         LocaleAlternateMeta.objects.create(og_locale_alternate="alt1")
         LocaleAlternateMeta.objects.create(og_locale_alternate="alt2")
 
+    @patch("django_ogp.templatetags.ogp.settings.OGP", None)
     def test_show_ogp_with_database(self):
-        context = show_ogp()
+
+        result = show_ogp()
         expected_dict = {
             "ogp": {
                 "og_title": "mock_og_tile",
@@ -69,34 +75,9 @@ class TestOGP(TestCase):
                 ],
             }
         }
-        self.assertDictEqual(context, expected_dict)
+        self.assertDictEqual(result, expected_dict)
 
     def test_show_ogp_with_settings(self):
-        settings.OGP = {
-            "og_title": "db_tile",
-            "og_type": "db_type",
-            "og_description": "db_description",
-            "og_url": "db_url",
-            "locales": [{"og_locale_alternate": "alt1"}, {"og_locale_alternate": "alt2"}],
-            "images": [
-                {
-                    "og_image": "db_image1",
-                    "og_image_url": "db_url1",
-                    "og_image_type": "db_image_type1",
-                    "og_image_width": 100,
-                    "og_image_height": 200,
-                    "og_image_alt": "db_image_alt1",
-                },
-                {
-                    "og_image": "db_image2",
-                    "og_image_url": "db_url2",
-                    "og_image_type": "db_image_type2",
-                    "og_image_width": 300,
-                    "og_image_height": 400,
-                    "og_image_alt": "db_image_alt2",
-                },
-            ],
-        }
 
         context = show_ogp()
 

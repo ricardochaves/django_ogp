@@ -11,7 +11,9 @@ register = template.Library()
 @register.inclusion_tag("django_app/ogp.html")
 def show_ogp():
 
-    data = settings.OGP if hasattr(settings, "OGP") else None
+    data = None
+    if hasattr(settings, "OGP") and settings.OGP:
+        data = settings.OGP
 
     if not data:
         data = build_dict_db()
