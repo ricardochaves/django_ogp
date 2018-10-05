@@ -1,8 +1,3 @@
-# import django
-
-# django.setup()
-
-
 from django_ogp.tests import settings
 from django.test import TestCase
 
@@ -10,7 +5,11 @@ from django_ogp.models import BasicMeta
 from django_ogp.models import ImageMeta
 from django_ogp.models import LocaleAlternateMeta
 from django_ogp.templatetags.ogp import show_ogp
-from unittest import mock
+
+try:
+    from unittest.mock import patch
+finally:
+    from mock import patch
 
 # Create your tests here.
 class TestOGP(TestCase):
@@ -45,7 +44,7 @@ class TestOGP(TestCase):
         LocaleAlternateMeta.objects.create(og_locale_alternate="alt1")
         LocaleAlternateMeta.objects.create(og_locale_alternate="alt2")
 
-    @mock.patch("django_ogp.templatetags.ogp.settings.OGP", None)
+    @patch("django_ogp.templatetags.ogp.settings.OGP", None)
     def test_show_ogp_with_database(self):
 
         result = show_ogp()

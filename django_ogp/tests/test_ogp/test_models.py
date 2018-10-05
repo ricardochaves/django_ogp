@@ -1,6 +1,3 @@
-# import django
-
-# django.setup()
 from django.test import TestCase
 
 from django_ogp.models import BasicMeta
