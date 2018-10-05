@@ -5,3 +5,4 @@ coverage==4.5.1
 coveralls==1.5.1
 pytest-django==3.4.3
 django-nose
+tox-travis
