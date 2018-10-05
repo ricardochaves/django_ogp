@@ -1,5 +1,13 @@
 sudo: false
 language: python
+env:
+  - DJANGO_SETTINGS_MODULE=django_ogp.tests.settings
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7-dev"
 install: 
   - pip install tox-travis
   - pip install coveralls
