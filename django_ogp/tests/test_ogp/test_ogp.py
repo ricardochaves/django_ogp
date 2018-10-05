@@ -8,7 +8,7 @@ from django_ogp.templatetags.ogp import show_ogp
 
 try:
     from unittest.mock import patch
-finally:
+except ImportError:
     from mock import patch
 
 # Create your tests here.
