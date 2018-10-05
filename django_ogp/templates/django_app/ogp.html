@@ -1,0 +1,36 @@
+{%if ogp.og_url %}
+<meta property="og:url" content="{{ogp.og_url}}"> {% endif %}
+<!-- {%if ogp.og_title %}
+<meta property="og:title" content="{{ogp.og_title}}">{% endif %} -->
+{%if ogp.og_site_name %}
+<meta property="og:site_name" content="{{ogp.og_site_name}}">{% endif %}
+{%if ogp.og_description %}
+<meta property="og:description" content="{{ogp.og_description}}">{% endif %}
+{%if ogp.og_determiner %}
+<meta property="og:determiner" content="{{ogp.og_determiner}}">{% endif %}
+{%if ogp.og_type %}
+<meta property="og:type" content="{{ogp.og_type}}">{% endif %}
+{%if ogp.og_locale %}
+<meta property="og:locale" content="{{ogp.og_locale}}">{% endif %}
+
+{% for l in ogp.locales%}
+<meta property="og:locale:alternate" content="{{l.og_locale_alternate}}" />
+
+{% endfor%}
+
+{%for i in ogp.images%}
+
+{%if ogp.og_image %}
+<meta property="og:image" content="{{i.og_image}}" />{% endif %}
+{%if ogp.og_image_secure_url %}
+<meta property="og:image:secure_url" content="{{i.og_image_secure_url}}" />{% endif %}
+{%if ogp.og_image_type %}
+<meta property="og:image:type" content="{{i.og_image_type}}" />{% endif %}
+{%if ogp.og_image_width %}
+<meta property="og:image:width" content="{{i.og_image_width}}" />{% endif %}
+{%if ogp.og_image_height %}
+<meta property="og:image:height" content="{{i.og_image_height}}" />{% endif %}
+{%if ogp.og_image_alt %}
+<meta property="og:image:alt" content="{{i.og_image_alt}}" />{% endif %}
+
+{% endfor%}

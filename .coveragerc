@@ -1,0 +1,11 @@
+[run]
+omit = 
+    .tox/*
+    setup.py
+    .venv/*
+
+[paths]
+source = .
+
+[report]
+show_missing=True
