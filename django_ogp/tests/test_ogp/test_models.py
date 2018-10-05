@@ -17,7 +17,8 @@ class TestModels(TestCase):
             og_locale="alt",
             og_site_name="mock_og_site_name",
         )
-        assert str(basic_meta) == "mock_og_tile"
+
+        self.assertEqual(str(basic_meta), "mock_og_tile")
 
     def test_image_meta(self):
         image_meta = ImageMeta.objects.create(
@@ -28,8 +29,10 @@ class TestModels(TestCase):
             og_image_height=200,
             og_image_alt="mock_og_image_alt1",
         )
-        assert str(image_meta) == "mock_og_image1"
+
+        self.assertEqual(str(image_meta), "mock_og_image1")
 
     def test_locale_alternate_meta(self):
         local_meta = LocaleAlternateMeta.objects.create(og_locale_alternate="alt1")
-        assert str(local_meta) == "alt1"
+
+        self.assertEqual(str(local_meta), "alt1")
