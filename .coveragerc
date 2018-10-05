@@ -9,3 +9,6 @@ source = django_ogp/
 
 [report]
 show_missing=True
+exclude_lines =
+    except ImportError:
+    from mock import patch
