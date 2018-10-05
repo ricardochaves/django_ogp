@@ -6,8 +6,6 @@ INSTALLED_APPS = ["django_ogp"]
 
 SECRET_KEY = "dfsfds"
 
-TEST_RUNNER = "django_nose.NoseTestSuiteRunner"
-
 OGP = {
     "og_title": "db_tile",
     "og_type": "db_type",
@@ -33,4 +31,3 @@ OGP = {
         },
     ],
 }
-

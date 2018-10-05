@@ -1,3 +1,8 @@
+import django
+
+django.setup()
+
+
 from django_ogp.tests import settings
 from django.test import TestCase
 
@@ -6,7 +11,6 @@ from django_ogp.models import ImageMeta
 from django_ogp.models import LocaleAlternateMeta
 from django_ogp.templatetags.ogp import show_ogp
 from unittest import mock
-
 
 # Create your tests here.
 class TestOGP(TestCase):
