@@ -12,9 +12,8 @@ register = template.Library()
 def show_ogp():
 
     data = None
-    if hasattr(settings, "OGP"):
-        if settings.OGP:
-            data = settings.OGP
+    if hasattr(settings, "OGP") and settings.OGP:
+        data = settings.OGP
 
     if not data:
         data = build_dict_db()
