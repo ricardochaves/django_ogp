@@ -2,8 +2,9 @@
 omit = 
     .tox/*
     setup.py
-    .venv/*
-    home/
+    .venv/**/*
+    home/**/*
+    
 
 [paths]
 source = django_ogp/

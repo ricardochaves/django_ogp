@@ -6,7 +6,7 @@ A more dynamic way to register Open Graph protocol
 
 ## Why
 
-This app is made to facilitate the SEO of *"*OnePage* sites. With it you will have an administrative ready to register the metas or if you prefer to include a dictionary in your `settings.py` with the values that must be loaded.
+This app is made to facilitate the SEO of *OnePage* sites. With it you will have an administrative ready to register the metas or if you prefer to include a dictionary in your `settings.py` with the values that must be loaded.
 
 If there is a dictionary in the settings it will not use the database and you can hide the users' [OPG](http://ogp.me/) registration by the access level of the user/group.
 
