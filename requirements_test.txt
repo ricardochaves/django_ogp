@@ -1,9 +1,9 @@
-tox==3.4.0
-pytest==3.8.1
+tox==3.5.1
+pytest==3.8.2
 coverage==4.5.1
 coveralls==1.5.1
-tox-travis
+tox-travis==0.11
 pluggy>=0.7
-pytest-django
-pytest-cov
-mock
+pytest-django==3.4.3
+pytest-cov==2.6.0
+mock==2.0.0
