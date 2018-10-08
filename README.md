@@ -61,6 +61,8 @@ python manage.py migrate
 
 ## Usage
 
+Import `{% load ogp %}` and add `{% show_ogp %}`in your `<header>` tag
+
 ### Settings
 
 You can include the metas straight into your settings. The app currently supports the following data:
