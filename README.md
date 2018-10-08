@@ -1,13 +1,12 @@
 # django_ogp
 
-[![Build Status](https://travis-ci.org/ricardochaves/django_ogp.svg?branch=master)](https://travis-ci.org/ricardochaves/django_ogp) [![Coverage Status](https://coveralls.io/repos/github/ricardochaves/django_ogp/badge.svg?branch=fix-travis)](https://coveralls.io/github/ricardochaves/django_ogp?branch=fix-travis) [![Maintainability](https://api.codeclimate.com/v1/badges/a2af8f7a30ad3bee2cac/maintainability)](https://codeclimate.com/github/ricardochaves/django_ogp/maintainability) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a1363cd34274377942b34418ed2b00a)](https://app.codacy.com/app/ricardochaves/django_ogp?utm_source=github.com&utm_medium=referral&utm_content=ricardochaves/django_ogp&utm_campaign=Badge_Grade_Dashboard)
- [![Updates](https://pyup.io/repos/github/ricardochaves/django_ogp/shield.svg)](https://pyup.io/repos/github/ricardochaves/django_ogp/) [![Python 3](https://pyup.io/repos/github/ricardochaves/django_ogp/python-3-shield.svg)](https://pyup.io/repos/github/ricardochaves/django_ogp/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![Build Status](https://travis-ci.org/ricardochaves/django_ogp.svg?branch=master)](https://travis-ci.org/ricardochaves/django_ogp) [![Coverage Status](https://coveralls.io/repos/github/ricardochaves/django_ogp/badge.svg?branch=fix-travis)](https://coveralls.io/github/ricardochaves/django_ogp?branch=fix-travis) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a1363cd34274377942b34418ed2b00a)](https://app.codacy.com/app/ricardochaves/django_ogp?utm_source=github.com&utm_medium=referral&utm_content=ricardochaves/django_ogp&utm_campaign=Badge_Grade_Dashboard) [![Maintainability](https://api.codeclimate.com/v1/badges/a2af8f7a30ad3bee2cac/maintainability)](https://codeclimate.com/github/ricardochaves/django_ogp/maintainability) [![Updates](https://pyup.io/repos/github/ricardochaves/django_ogp/shield.svg)](https://pyup.io/repos/github/ricardochaves/django_ogp/) [![Python 3](https://pyup.io/repos/github/ricardochaves/django_ogp/python-3-shield.svg)](https://pyup.io/repos/github/ricardochaves/django_ogp/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black) [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/ricardochaves/django_ogp/blob/master/LICENSE)
 
 A more dynamic way to register Open Graph protocol
 
 ## Why
 
-This app is made to facilitate the SEO of *"*OnePage* sites. With it you will have an administrative ready to register the metas or if you prefer to include a dictionary in your `settings.py` with the values that must be loaded.
+This app is made to facilitate the SEO of *OnePage* sites. With it you will have an administrative ready to register the metas or if you prefer to include a dictionary in your `settings.py` with the values that must be loaded.
 
 If there is a dictionary in the settings it will not use the database and you can hide the users' [OPG](http://ogp.me/) registration by the access level of the user/group.
 
@@ -17,26 +16,26 @@ Now you can create [OGPs](http://ogp.me/) in an easy way.
 
 The test matrix guarantees coverage for:
 
- - pythos2·7 : Django 1.8
- - pythos2·7 : Django 1.11
- - pythos3·4 : Django 1.8
- - pythos3·4 : Django 1.9
- - pythos3·4 : Django 1.11
- - pythos3·5 : Django 1.8
- - pythos3·5 : Django 1.9
- - pythos3·5 : Django 1.11
- - pythos3·5 : Django 2.0
- - pythos3·5 : Django 2.1
- - pythos3·6 : Django 1.8
- - pythos3·6 : Django 1.9
- - pythos3·6 : Django 1.11
- - pythos3·6 : Django 2.0
- - pythos3·6 : Django 2.1
- - pythos3·7 : Django 1.8
- - pythos3·7 : Django 1.9
- - pythos3·7 : Django 1.11
- - pythos3·7 : Django 2.0
- - pythos3·7 : Django 2.1
+- pythos2·7 : Django 1.8
+- pythos2·7 : Django 1.11
+- pythos3·4 : Django 1.8
+- pythos3·4 : Django 1.9
+- pythos3·4 : Django 1.11
+- pythos3·5 : Django 1.8
+- pythos3·5 : Django 1.9
+- pythos3·5 : Django 1.11
+- pythos3·5 : Django 2.0
+- pythos3·5 : Django 2.1
+- pythos3·6 : Django 1.8
+- pythos3·6 : Django 1.9
+- pythos3·6 : Django 1.11
+- pythos3·6 : Django 2.0
+- pythos3·6 : Django 2.1
+- pythos3·7 : Django 1.8
+- pythos3·7 : Django 1.9
+- pythos3·7 : Django 1.11
+- pythos3·7 : Django 2.0
+- pythos3·7 : Django 2.1
 
 ## Install
 

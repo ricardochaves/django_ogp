@@ -11,6 +11,7 @@ try:
 except ImportError:
     from mock import patch
 
+
 # Create your tests here.
 class TestOGP(TestCase):
     def setUp(self):
