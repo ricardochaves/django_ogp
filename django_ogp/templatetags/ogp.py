@@ -24,22 +24,28 @@ def show_ogp():
 def build_dict_db():
 
     metas = build_base_meta_db()
-    metas["locales"] = build_locale_meta_db()
-    metas["images"] = build_image_meta_db()
+
+    if metas:
+        metas["locales"] = build_locale_meta_db()
+        metas["images"] = build_image_meta_db()
 
     return metas
 
 
 def build_base_meta_db():
     base_meta = BasicMeta.objects.first()
-    return {
-        "og_title": base_meta.og_title,
-        "og_type": base_meta.og_type,
-        "og_description": base_meta.og_description,
-        "og_url": base_meta.og_url,
-        "og_site_name": base_meta.og_site_name,
-        "og_determiner": _get_enum_value(base_meta.og_determiner),
-    }
+    if base_meta:
+        return {
+            "og_title": base_meta.og_title,
+            "og_type": base_meta.og_type,
+            "og_description": base_meta.og_description,
+            "og_url": base_meta.og_url,
+            "og_site_name": base_meta.og_site_name,
+            "og_determiner": _get_enum_value(base_meta.og_determiner),
+        }
+
+    else:
+        return None
 
 
 def _get_enum_value(value):
