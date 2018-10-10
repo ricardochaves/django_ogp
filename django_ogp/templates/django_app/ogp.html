@@ -1,3 +1,5 @@
+{%if ogp%}
+
 {%if ogp.og_url %}
 <meta property="og:url" content="{{ogp.og_url}}"> {% endif %}
 {%if ogp.og_title %}
@@ -35,3 +37,5 @@
 <meta property="og:image:alt" content="{{i.og_image_alt}}" />{% endif %}
 
 {% endfor%}
+
+{% endif %}
