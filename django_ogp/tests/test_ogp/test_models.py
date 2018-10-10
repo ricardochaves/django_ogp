@@ -5,7 +5,6 @@ from django_ogp.models import ImageMeta
 from django_ogp.models import LocaleAlternateMeta
 
 
-# Create your tests here.
 class TestModels(TestCase):
     def test_basic_meta(self):
         basic_meta = BasicMeta.objects.create(

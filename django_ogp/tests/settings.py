@@ -6,11 +6,18 @@ INSTALLED_APPS = ["django_ogp"]
 
 SECRET_KEY = "dfsfds"
 
+TEMPLATES = [
+    {"BACKEND": "django.template.backends.django.DjangoTemplates", "DIRS": [], "APP_DIRS": True, "OPTIONS": {}}
+]
+
 OGP = {
-    "og_title": "db_tile",
+    "og_title": "db_title",
     "og_type": "db_type",
     "og_description": "db_description",
     "og_url": "db_url",
+    "og_site_name": "db_site_name",
+    "og_determiner": "",
+    "og_locale": "en-US",
     "locales": [{"og_locale_alternate": "alt1"}, {"og_locale_alternate": "alt2"}],
     "images": [
         {

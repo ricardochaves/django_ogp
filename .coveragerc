@@ -14,3 +14,7 @@ show_missing=True
 exclude_lines =
     except ImportError:
     from mock import patch
+    if result["ogp"]["og_title"] == u"mock_og_title":
+    self.assertDictEqual(result, expected_dict_2)
+    else:
+    self.assertDictEqual(result, expected_dict_3)    

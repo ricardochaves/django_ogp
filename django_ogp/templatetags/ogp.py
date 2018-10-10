@@ -37,7 +37,14 @@ def build_base_meta_db():
         "og_type": base_meta.og_type,
         "og_description": base_meta.og_description,
         "og_url": base_meta.og_url,
+        "og_site_name": base_meta.og_site_name,
+        "og_determiner": _get_enum_value(base_meta.og_determiner),
     }
+
+
+def _get_enum_value(value):
+    values = {"1": "a", "2": "an", "3": "the", "4": "", "5": "auto"}
+    return values[str(value)]
 
 
 def build_image_meta_db():
