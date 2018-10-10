@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="django_ogp",
-    version="0.0b4",
+    version="0.0b5",
     description="A more dynamic way to register Open Graph protocol",
     long_description=README,
     include_package_data=True,
