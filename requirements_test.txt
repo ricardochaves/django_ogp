@@ -4,6 +4,6 @@ coverage==4.5.2
 coveralls==1.5.1
 tox-travis==0.11
 pluggy>=0.7
-pytest-django==3.4.5
+pytest-django==3.4.7
 pytest-cov==2.6.1
 mock==2.0.0
