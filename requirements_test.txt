@@ -1,7 +1,7 @@
 tox==3.8.6
 pytest==4.4.0
 coverage==4.5.3
-coveralls==1.6.0
+coveralls==1.7.0
 tox-travis==0.12
 pluggy>=0.7
 pytest-django==3.4.8
