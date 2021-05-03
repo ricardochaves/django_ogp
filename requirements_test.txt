@@ -6,4 +6,4 @@ tox-travis==0.12
 pluggy>=0.7
 pytest-django==4.2.0
 pytest-cov==2.11.1
-mock==3.0.5
+mock==4.0.3
